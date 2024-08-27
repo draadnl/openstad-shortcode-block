@@ -4,9 +4,13 @@
  */
 
 if ( isset( $attributes['shortcode'] ) && !empty( $attributes['shortcode'] ) ) :
+	preg_match( '/src="([^"]+)"/', $attributes['shortcode'], $matches );
+	$src = ( isset( $matches[1] ) ) ? esc_url( $matches[1] ) : $attributes['shortcode'];
 ?>
+
 <div <?php echo get_block_wrapper_attributes(); ?>>
-	<?php echo $attributes['shortcode']; ?>
+	<script src="<?php echo $src; ?>" type="text/javascript"></script>
 </div>
+
 <?php
 endif;
