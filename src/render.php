@@ -3,7 +3,7 @@
  * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
  */
 
-if ( isset( $attributes['shortcode'] ) && !empty( $attributes['shortcode'] ) ) :
+if ( ! empty( $attributes['shortcode'] ) ) :
 	preg_match( '/src="([^"]+)"/', $attributes['shortcode'], $matches );
 	$src = ( isset( $matches[1] ) ) ? esc_url( $matches[1] ) : $attributes['shortcode'];
 ?>
