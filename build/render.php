@@ -9,7 +9,7 @@ if ( ! empty( $attributes['shortcode'] ) ) :
 ?>
 
 <div <?php echo get_block_wrapper_attributes(); ?>>
-	<script src="<?php echo $src; ?>"></script>
+	<script src="<?php echo esc_attr( $src ); ?>" type="text/javascript"></script>
 </div>
 
 <?php
