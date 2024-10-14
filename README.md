@@ -6,5 +6,9 @@ De OpenStad Shortcode Block plugin voegt een blok toe aan de gutenberg editor vo
 
 ## Changelog
 
+### 1.0.1
+- Security improvement: Script src is now properly sanitized.
+- Styling improvement: Removed all !importants and duplicate font-size property.
+
 ### 1.0.0
 - Initial release of the plugin.

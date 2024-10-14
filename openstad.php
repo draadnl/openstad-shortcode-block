@@ -4,7 +4,7 @@
  * Description:       Block for embedding OpenStad shortcodes
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Draad
  * Text Domain:       openstad
  *
